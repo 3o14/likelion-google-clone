@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .header {
+        /* border: 3px solid purple; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0.2rem;
+      }
+      .header-button {
+        padding: 0rem 0.5rem;
+        color: #262626;
+        font-size: small;
+      }
+      .header-button:hover {
+        text-decoration: underline;
+      }
+      .main {
+        /* border: 3px solid blue; */
+      }
+
+      .google-logo {
+        width: 25rem;
+        position: relative;
+        top: 4rem;
+      }
+
+      .header-login {
+        border: 0;
+        outline: 0;
+        background-color: #4572e4;
+        color: white;
+        padding: 0.7rem 2rem;
+        border-radius: 3px;
+      }
+      .header-login:hover {
+        box-shadow: 0px 1px 3px 1px #dee0e4;
+        background-color: #3e65ca;
+      }
+
+      .article-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .search-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .fa-search {
+        color: #9a9fa4;
+        position: relative;
+        left: 2.5rem;
+      }
+      .input {
+        width: 30rem;
+        height: 3rem;
+        border-radius: 35px;
+        border: 1px solid #e2e3e8;
+      }
+
+      .input-icon {
+        width: 28px;
+      }
+      .input-div {
+        position: relative;
+        left: 2rem;
+      }
+
+      .icon-div {
+        position: relative;
+        right: 7rem;
+        top: 0.4rem;
+      }
+      .keyword {
+        padding-top: 2rem;
+      }
+      .keyword-component {
+        border: 0;
+        outline: 0;
+        background-color: #f8f9fa;
+        color: #404245;
+        font-size: small;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+      }
+      .keyword-component:hover {
+        border: 1px solid #dee0e4;
+        box-shadow: 0px 1px 3px 1px #dee0e4;
+      }
+
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .footer-bar {
+        background-color: #f2f2f2;
+        padding: 0.7rem;
+      }
+      #line2 {
+        display: flex;
+        justify-content: space-evenly;
+        border-top: 0.5px solid #dee0e4;
+      }
+      .footer-left {
+      }
+      .footer-right {
+      }
+      .footer-component {
+        color: #717478;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="leftside">
+          <span class="header-button" id="header-google-info">Google 정보</span>
+          <span class="header-button" id="header-store">스토어</span>
+        </div>
+        <div class="rightside">
+          <span class="header-button" id="header-gmail">Gmail</span>
+          <span class="header-button" id="header-image">이미지</span>
+          <span class="header-button" id="header-icon">아이콘</span>
+          <button class="header-login">로그인</button>
+        </div>
+      </header>
+      <main class="main">
+        <div class="article-area">
+          <img class="google-logo" src="./google-logo.png" alt="google-logo" />
+          <div class="search-area">
+            <div class="input-div">
+              <i class="fas fa-search"></i>
+              <input class="input" type="text" />
+              <span class="icon-div">
+                <img
+                  class="input-icon"
+                  id="input-keyboard"
+                  src="./keyboard-icon.png"
+                  alt="keyboard-icon"
+                />
+                <img
+                  class="input-icon"
+                  id="input-mic"
+                  src="./mic-icon.png"
+                  alt="mic-icon"
+                />
+                <img
+                  class="input-icon"
+                  id="input-camera"
+                  src="./camera-icon.png"
+                  alt="camera-icon"
+                />
+              </span>
+            </div>
+            <div class="keyword">
+              <button class="keyword-component" id="first">Google 검색</button>
+              <button class="keyword-component" id="second">
+                I'm Feeling Lucky
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-bar" id="line1">
+          <span class="footer-component">대한민국</span>
+        </div>
+        <div class="footer-bar" id="line2">
+          <div class="footer-left">
+            <span class="footer-component">광고</span>
+            <span class="footer-component">비즈니스</span>
+            <span class="footer-component">검색의 원리</span>
+          </div>
+          <div class="footer-right">
+            <span class="footer-component">개인정보처리방침</span>
+            <span class="footer-component">약관</span>
+            <span class="footer-component">설정</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
